@@ -5,6 +5,10 @@ language: generic
 services:
     - docker
 
+os: linux
+
+dist: xenial
+
 before_install:
     - echo "start creating an image with dockerfile"
     - docker build -t jsjung/react -f Dockerfile.dev .
